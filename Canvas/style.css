@@ -1,0 +1,129 @@
+  *{
+    margin: 0;
+    padding:0;
+    box-sizing:borde-box;
+  }
+  ul,ol,li{
+    list-style:none;
+  }
+  body{
+    overflow:hidden;
+  }
+  #xxx{
+      background: #FFFAFA;
+      display: block; /*不要用css对canvas进行宽高设置，否则会等比缩放，用内联*/
+      position:fixed;
+      left:0;
+      top:0;
+  }
+  .actions{
+      position: fixed;
+      left: 0;
+      top:0;
+      padding:20px;
+  }
+  .actions svg{
+    width:1.5em;
+    height:1.5em;
+    transition:all 0.3s;
+    margin:0 10px;
+    }
+  .actions svg.active{
+    fill:red;
+    transform:scale(1.2);
+  }
+  .color{
+    position:fixed;
+    top:40px;
+    left:10px;
+    margin:10px;
+   }
+  .color>li{
+    width:20px;
+    height:20px;
+    border:1px solid gray;
+    border-radius:50%;
+    margin:10px 0px ;
+  }
+  .color .red{
+    background:red;
+  }
+  .color .green{
+    background:green;
+  }
+  .color .blue{
+    background:blue;
+  }
+  .color .black{
+    background:black;
+  }
+  .color .maize{
+    background:yellow;
+  }
+  .color .aqua{
+    background:aqua;
+  }
+  .color .purple{
+    background:purple;
+  }
+  .color .silver{
+    background:silver;
+  }
+  .color li.active{
+    transition:all 0.3s;
+    transform:scale(1.2);
+  }
+  .sizes{
+    position:fixed;
+    right:10px;
+    top:45px;
+    border:1px solid #AAAAAA;
+    height:130px;
+    width:50px;
+    background: #EEEEEE;
+    border-radius: 4px;
+  }
+ 
+  .sizes>.pen{
+    height:30px;
+    width:30px;
+    margin-bottom:5px;
+    border:3px solid #ddd;
+    text-align: center;
+    margin: 5px auto;
+  }
+  .size{
+    background: #42AEC2;
+    border:2px solid #000;
+  }
+  .sizes >.pen >.pencil{
+    display: block;
+    margin: 3px auto;
+    height: 24px;
+    width:3px;
+  }
+  .sizes >.pen >.pencil-one{
+    border-left: 3px solid black;
+  }
+  .sizes >.pen >.pencil-two{
+    border-left: 5px solid black;
+  }
+  .sizes >.pen >.pencil-three{
+    border-left: 7px solid black;
+  }
+  .sizes >.pen:hover{
+    cursor: pointer;
+    border:3px solid  #aaa;
+  }
+  .bk{
+    position:fixed;
+    top:7px;
+    right:121px;
+    margin:15px 0px 0px 0px ;
+  }
+  .bk > .yellow{
+    height: 20px;
+    width:20px;
+    border:2px solid #ddd;
+    background: yellow;
+  }

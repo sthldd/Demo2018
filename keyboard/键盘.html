@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>键盘</title>
+</head>
+<body>
+  <header>
+    <div id="search">
+      <form name="s" action="//www.baidu.com/s" class="formname">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-search"></use>
+        </svg>
+        <input type="text"  class="input-search" placeholder="百度一下，您就知道我们的厉害" id="q" name="wd" autocomplete="on" value="">
+        <input type="button" class="button" onclick="window.open('//www.baidu.com/s?wd='+s.wd.value,'')" value="百度一下">
+        <input type="button" class="button" onclick="window.open('//www.google.com/search?q='+s.wd.value,'')" value="谷歌搜索">
+      </form>
+    </div>
+  </header>  
+  <main>
+    <div class="wrapper" id="mainx" > </div>    
+  </main>
+  <script src="./keyboard.js"></script>
+  <script src="//at.alicdn.com/t/font_594520_wr7faxb946kihpvi.js"></script>
+</body>
+</html>

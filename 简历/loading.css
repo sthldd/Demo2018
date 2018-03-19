@@ -1,0 +1,35 @@
+.loading{
+    height:200px;
+    width:200px;
+    position:relative;
+  }
+  .loading::before,.loading::after{
+    content:'';
+    position:absolute;
+    border:1px solid ;
+    height:0px;
+    width:0px;
+    border-radius:50%;
+    background:black;
+    margin:auto;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    animation: a 1.5s linear infinite ;
+  }
+  .loading::after{
+    animation-delay:0.75s;
+  }
+  @keyframes a {
+    0%{
+      width:0px;
+      height:0px;
+      opacity:1;
+    }
+    100%{
+      width:60px;
+      height:60px; 
+      opacity:0.1;
+    }
+  }

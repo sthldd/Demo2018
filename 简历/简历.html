@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>简历</title>
+    <link rel="stylesheet" href="./简历.css">
+    <link rel="stylesheet" href="./loading.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
+    <script src="//at.alicdn.com/t/font_451045_32zbfqegtq3t0529.js"></script>
+    <style type="text/css">
+      .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+      }
+      .site-welcome{
+        display: none;
+        position: fixed;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background: #888888;
+        z-index: 1;
+        justify-content: center;
+        align-items: center;
+      }
+      .site-welcome.active{
+        display: flex;
+      }
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+        background: white;
+        margin-bottom:200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="siteWelcome" class="site-welcome  active">
+      <div class="loading"></div>
+    </div> 
+    <div id="topNavBar"class="topNavBar">
+      <div class="topNavBar-inner clearfix">
+        <a class="logo" href="#" alt="logo" style="float: left;">
+          <span class="rs">RS</span>
+          <span class="card">card</span>
+        </a>
+        <nav class="menu" style="float: right;">
+          <ul class="clearfix">
+            <li>
+              <a href="#siteAbout">关于</a>
+            </li>
+            <li>
+              <a href="#siteSkills">技能</a>
+            </li>
+            <li>
+              <a href="#siteWorks">作品</a>
+              <ul class="submenu">
+                <li>作品1</li>
+                <li>作品2</li>
+                <li>作品3</li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">博客</a>
+              <ul class="submenu">
+                <li>博客1</li>
+                <li>博客2</li>
+                <li>博客3</li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">日历</a>
+            </li>
+            <li>
+              <a href="#">联系方式</a>
+            </li>
+            <li>
+              <a href="#">其他</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="mask"></div>
+    </div>
+    <main>
+        
+      <div data-x id="siteAbout"class="userCard">
+        <div class="pictureAndText clearfix">
+          <div class="picture">
+            <img src="./img/self.jpg" width=299 height=347 alt="头像">
+          </div>
+          <div class="text">
+            <span class="welcome">Hello
+              <span class="triangle"></span>
+            </span>
+            <h1>马磊磊</h1>
+            <p>前端开发工程师</p>
+            <hr>
+            <dl>
+              <dt>年龄</dt>
+              <dd>21</dd>
+              <dt>所在城市</dt>
+              <dd>合肥</dd>
+              <dt>邮箱</dt>
+              <dd>1209624528@qq.com</dd>
+              <dt>手机</dt>
+              <dd>13739258945</dd>
+              <dt>gihub</dt>
+              <dd>https://github.com/sthldd</dd>
+            </dl>
+          </div>
+        </div>
+        <footer class="media">
+          <a href="#">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-github"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-Ankerwebicon-"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-weibo"></use>
+            </svg>
+          </a>
+        </footer>
+      </div>
+      <p class="download">
+        <a class="button" href="./aaa.pdf" target="_blank" download>下载 PDF 简历</a>
+      </p>
+      <p class="Introduction">
+        马磊磊， 资深前端工程师，资深前端讲师，现在在 饥人谷 教前端课程。
+        <br> 技能：前端开发，Rails 开发，Node.js 开发
+      </p>
+
+    </main>
+
+    <section data-x id="siteSkills"class="skills">
+      <h2>技能</h2>
+      <ol class="clearfix">
+        <li>
+          <h3>HTML 5 &amp; CSS 3</h3> 
+          <div class="progressBar">
+            <div class="progress"  style="width:70%"></div>
+          </div>
+        </li>
+        <li>
+          <h3>JavaScript</h3> 
+          <div class="progressBar">
+            <div class="progress"  style="width:70%"></div>
+          </div>
+        </li>
+        <li>
+          <h3>jQuery</h3> 
+          <div class="progressBar">
+            <div class="progress"  style="width:60%"></div>
+          </div>
+        </li>
+        <li>
+          <h3>Vue</h3> 
+          <div class="progressBar">
+            <div class="progress"  style="width:40%"></div>
+          </div>
+        </li>
+        <li>
+          <h3>React</h3> 
+          <div class="progressBar">
+            <div class="progress"  style="width:20%"></div>
+          </div>
+        </li>
+        <li>
+          <h3>HTTP</h3>
+          <div class="progressBar">
+            <div class="progress"  style="width:30%"></div>
+          </div>
+        </li>
+      </ol>
+    </section>
+    <section data-x  id="siteWorks"class="portfolio">
+        <h2>作品集</h2>
+        <nav>
+          <ol class="clearfix">
+            <li id="portfolio1">所有</li>
+            <li id="portfolio2">框架</li>
+            <li id="portfolio3">原生JS&amp;CSS</li>
+          </ol>
+          <div id="portfolioBar" class="bar state-1">
+            <div class="bar-inner"></div>
+          </div>
+        </nav>
+
+        <div id="mySlides">
+          <div class="swiper-container">
+             <div class="swiper-wrapper">
+                <a href="https://sthldd.github.io/Canvas/%E7%94%BB%E6%9D%BF.html" target="_blank" class="swiper-slide"><img src="./img/1.jpg" alt="" class="swiper-slide"></a>
+                <a href="https://sthldd.github.io/Canvas/%E7%94%BB%E6%9D%BF.html" target="_blank" class="swiper-slide"><img src="./img/2.jpg" alt="" class="swiper-slide"></a>
+                <a href="https://sthldd.github.io/Canvas/%E7%94%BB%E6%9D%BF.html" target="_blank" class="swiper-slide"><img src="./img/canvas.jpg" alt="" class="swiper-slide"></a>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <script>
+          portfolio1.onclick= function(){
+            portfolioBar.className = 'bar state-1'
+          }
+          portfolio2.onclick= function(){
+            portfolioBar.className = 'bar state-2'
+          }
+          portfolio3.onclick= function(){
+            portfolioBar.className = 'bar state-3'
+          }
+        </script>
+     
+    </section>
+    <section class="message">
+      <h2>留言</h2>
+      <ol id="messageList"></ol>
+      <form id="postMessage" style="width:700px;margin:100px auto;">
+        <label for="">姓名</label>
+        <input type="text" name="name">
+        <label for="">内容</label>
+        <input type="text" name="content">
+        <input type="submit" value="快来给我留言QAQ">
+      </form>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.1/Tween.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+    <script src="./init_swiper.js"></script>
+    <script src="//cdn1.lncld.net/static/js/3.6.0/av-min.js"></script>
+    
+    <script>
+      setTimeout(function(){
+        siteWelcome.classList.remove('active')
+      },1000)
+      </script>
+      <script src="./leanCloud.js"></script>
+      <script src="./auto-slide-up.js"></script>
+      <script src="./sticky-topbar.js"></script>
+      <script src="./smoothly-navigation.js"></script>
+  </body>
+  
+</html>

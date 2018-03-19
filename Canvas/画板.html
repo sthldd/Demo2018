@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>画板</title>
+    <style>
+      .icon {
+        width: 1em; height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+      }
+    </style>
+</head>
+<body>
+  <canvas id="xxx" width=300px height=300px></canvas> 
+  <div id="actions" class="actions">
+    <svg id="pen"class="icon  active">
+      <use xlink:href="#icon-pen"></use>
+    </svg>
+    <svg id="eraser"class="icon">
+      <use xlink:href="#icon-eraser"></use>
+    </svg>
+    <svg id="clear"class="clear">
+      <use xlink:href="#icon-clear"></use>
+    </svg>
+    <svg id="download"class="download">
+      <use xlink:href="#icon-download"></use>
+    </svg>
+  </div>
+
+  <ol class="color" id="color">
+    <li id="red" class="red"></li>
+    <li id="green" class="green"></li>
+    <li id="blue" class="blue"></li>
+    <li id="black" class="black active"></li>
+    <li id="maize" class="maize"></li>
+    <li id="aqua" class="aqua"></li>
+    <li id="purple" class="purple"></li>
+    <li id="silver" class="silver"></li>
+  </ol>
+  
+  <div class="sizes">
+    <div id="thin" class="thin pen">
+      <span class="pencil pencil-one"></span>
+    </div>  
+    <div id="middle" class="middle pen">
+      <span class="pencil pencil-two"></span>
+    </div> 
+    <div id="thick" class="thick pen">
+      <span class="pencil pencil-three"></span>
+   </div> 
+  </div>
+  <ol class="bk">
+    <li id="yellow" class="yellow"></li>
+  </ol>
+  <script src="//at.alicdn.com/t/font_540750_urbbm5zhu71wz5mi.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./js.js"></script>
+</body>
+</html>
