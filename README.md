@@ -1,7 +1,7 @@
 # Canvas画板
-该项目是一个移动端的 Canvas 画板。[预览](https://sthldd.github.io/2018-demo/Canvas/%E7%94%BB%E6%9D%BF.html)
+该项目是一个移动端的 Canvas 画板。[预览](https://sthldd.github.io/Demo2018/Canvas/%E7%94%BB%E6%9D%BF.html)
 |
-[code](https://github.com/sthldd/2018-demo/tree/master/Canvas)
+[code](https://github.com/sthldd/Demo2018/tree/master/Canvas)
 
 功能介绍：支持 PC 端和移动端，包含 画笔 、橡皮擦 、选择颜色 、画笔粗细 、清空 和 下载 功能
 技术细节：使用了 canvas API + 原生 JS 进行开发 HTML 5 & CSS 3 inside 使用了 Animation 插件
